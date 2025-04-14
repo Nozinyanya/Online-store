@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iDevice - Online Store</title>
+    <link rel="icon" href="images1/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images1/logo.png" alt="iDevice Logo" class="logo">
+    </header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Welcome to iDevice - Innovation at Your Fingertips</h1>
+        <section class="products">
+            <h2>Products</h2>
+            <div class="product-grid">
+                <div class="item">
+                    <h3>iPhone 14</h3>
+                    <img src="images1/iphone.webp" alt="iPhone 14 Image" class="product-image">
+                    <button onclick="addToCart('iPhone 14', 16999.99)">Buy Now</button>
+                </div>
+                <div class="item">
+                    <h3>Samsung Galaxy S23</h3>
+                    <img src="images1/samsung.avif" alt="Samsung Galaxy S23 Image" class="product-image">
+                    <button onclick="addToCart('Samsung Galaxy S23', 15899.99)">Buy Now</button>
+                </div>
+                <div class="item">
+                    <h3>Google Pixel 7</h3>
+                    <img src="images1/pixel7.png" alt="Google Pixel 7 Image" class="product-image">
+                    <button onclick="addToCart('Google Pixel 7', 3799.99)">Buy Now</button>
+                </div>
+                <div class="item">
+                    <h3>Oneplus 11</h3>
+                    <img src="images1/oneplus11.png" alt="Oneplus 11 Image" class="product-image">
+                    <button onclick="addToCart('Oneplus 11', 11799.99)">Buy Now</button>
+                </div>
+                <div class="item">
+                    <h3>IPhone 13</h3>
+                    <img src="images1/iphone13.png" alt="IPhone 13 Image" class="product-image">
+                    <button onclick="addToCart('IPhone 13', 22799.99)">Buy Now</button>
+                </div>
+                <div class="item">
+                    <h3>IPhone SE</h3>
+                    <img src="images1/iphonese.png" alt="IPhone SE Image" class="product-image">
+                    <button onclick="addToCart('IPhone SE', 7799.99)">Buy Now</button>
+                </div>
+                <div class="item">
+                    <h3>Z Flip 4</h3>
+                    <img src="images1/zflip4.png" alt="Z Flip 4 Image" class="product-image">
+                    <button onclick="addToCart('Z Flip 4', 19799.99)">Buy Now</button>
+                </div>
+                <div class="item">
+                    <h3>pixel 6a</h3>
+                    <img src="images1/pixel6a.png" alt="Pixel 6a Image" class="product-image">
+                    <button onclick="addToCart('Pixel 6a', 1899.99)">Buy Now</button>
+                </div>
+                <div class="item">
+                    <h3>Nord 2</h3>
+                    <img src="images1/nord2.png" alt="Nord 2 Image" class="product-image">
+                    <button onclick="addToCart('Nord 2', 3799.99)">Buy Now</button>
+                </div>
+                <div class="item">
+                    <h3>Galaxy a53</h3>
+                    <img src="images1/galaxya53.png" alt="Galaxy a53 Image" class="product-image">
+                    <button onclick="addToCart('Galaxy a53', 9999.99)">Buy Now</button>
+                </div>
+
+
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: R0.00</p>
+        </section>
+        <section class="checkout">
+            <h2>Card Details</h2>
+            <form id="payment-form">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" placeholder="1234 4578 9012 3456" required>
+                <label for="expiration">Expiration Date:</label>
+                <input type="text" id="expiration" placeholder="MM/YY" required>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" placeholder="123" required>
+                <button type="submit">Checkout</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 iDevice. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
